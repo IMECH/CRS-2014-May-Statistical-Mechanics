@@ -1,0 +1,29 @@
+\begin{problem}[2.6]
+试证明在相同的压强降落下, 气体在准静态绝热膨胀中的温度降落大于在节流过程中的温度降落.
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+对于气体的准静态绝热膨胀过程中有$dS=0$, 其温度降落由$(\partial T/\partial p)_S$描述, 熵函数$S(T,p)$的全微分为
+\[
+dS = \bigg(\frac{\partial S}{\partial T}\bigg)_p d T + \bigg(\frac{\partial S}{\partial p}\bigg)_T d T = 0
+\]
+结合麦氏关系$(\partial S/\partial p)_T=-(\partial V/\partial T)_p$及$C_p=T(\partial S/\partial T)_p$, 上式可化为
+\begin{equation}\label{eq:dTds=0}
+\bigg(\frac{\partial T}{\partial p}\bigg)_s = -\frac{(\partial S/\partial p)_T}{(\partial S/\partial T)_p} = \frac{T}{C_p}\bigg(\frac{\partial V}{\partial T}\bigg)_p
+\end{equation}
+对于节流过程中有$dH =0$, 节流过程中的温度降落由$(\partial T/\partial p)_H$描述, 焓函数$H(T,p)$的全微分为
+\[
+dH = \bigg(\frac{\partial H}{\partial T}\bigg)_p dT + \bigg(\frac{\partial H}{\partial p}\bigg)_T dp = 0
+\]
+结合麦氏关系$(\partial H/\partial p)_T=V-T(\partial V/\partial T)_p$及$C_p=T(\partial H/\partial T)_p$, 上式可化为
+\begin{equation}\label{eq:dTdH=0}
+\bigg(\frac{\partial T}{\partial p}\bigg)_H = -\frac{(\partial H/\partial p)_T}{(\partial H/\partial T)_p}
+=\frac{T}{C_p} \bigg(\frac{\partial V}{\partial T}\bigg)_p-
+\frac{V}{C_p}
+\end{equation}
+由式(\ref{eq:dTds=0})及式(\ref{eq:dTdH=0})可得
+\[
+\bigg(\frac{\partial T}{\partial p}\bigg)_s - \bigg(\frac{\partial T}{\partial p}\bigg)_H = \frac{V}{C_p} > 0
+\]
+因此在相同的压强降落下, 气体在准静态绝热膨胀中的温度降落大于在节流过程中的温度降落.
+\end{solution}

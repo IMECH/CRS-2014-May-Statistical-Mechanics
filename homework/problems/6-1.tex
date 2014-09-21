@@ -1,0 +1,32 @@
+\begin{problem}[6.1]
+试根据式(6.2.13)证明: 在体积$V$内,在$\varepsilon$到$\varepsilon + \mathrm{d} \varepsilon$的能量范围内, 三维自由粒子的量子态数为
+\[
+D(\varepsilon) \mathrm{d} \varepsilon = \frac{2\pi V}{h^3} (2m)^{3/2}\varepsilon^{1/2} \mathrm{d} \varepsilon
+\]
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+由式
+\begin{equation}\tag{6.2.13}
+\d n_x\d n_y\d n_z = \bigg(\frac{L}{2\pi\hbar}\bigg)^3\d p_x \d p_y \d p_z 
+= \frac{V}{h^3}\mathrm{d}p_x\mathrm{d}p_y\mathrm{d}p_z
+\end{equation}
+可知, 在体积$V=L^3$内, 在$p_x$到$p_x+\mathrm{d}p_x$, $p_y$到$p_y+\mathrm{d}p_y$, $p_z$到$p_z+\mathrm{d}p_z$的动量范围内, 自由粒子可能的量子态数为
+\[
+\frac{V}{h^3}\mathrm{d}p_x\mathrm{d}p_y\mathrm{d}p_z
+\]
+用动量空间的球坐标描述自由粒子的动量, 并对动量方向积分, 可得在体积$V$内, 动量大小在$p$到$p+\mathrm{d}p$范围内三维自由粒子可能的量子态数为
+\begin{equation}\label{eq:6-1n}
+\frac{4\pi V}{h^3} p^2\d p
+\end{equation}
+由自由粒子的能量动量关系为$\varepsilon=p^2/(2m)$知
+\begin{equation}\label{eq:6-1p}
+p = \sqrt{2m\varepsilon},\quad p\mathrm{d}p = m\mathrm{d}\varepsilon
+\end{equation}
+将式(\ref{eq:6-1p})代入式(\ref{eq:6-1n})得
+\[
+D(\varepsilon) \mathrm{d} \varepsilon = \frac{2\pi V}{h^3} (2m)^{3/2}\varepsilon^{1/2} \mathrm{d} \varepsilon
+\]
+\end{solution}
+
+

@@ -1,0 +1,30 @@
+\begin{problem}[3.11]
+根据式(3.4.7), 利用上题的结果计及潜热$L$是温度的函数, 但假设温度的变化范围不大, 定压热容量可以看作常量, 试证明蒸气压方程可以表为
+\[
+\ln p = A -\frac{B}{T} + C\ln T
+\]
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+由上题的结果
+\[
+\frac{dL}{dT} = C_p^\beta -C_p^\alpha
+\]
+假设温度的变化范围不大, 定压热容量可以看作常量, 则对上式积分可得
+\begin{equation}\label{eq:intL}
+L = L_0 + \big(C_p^\beta -C_p^\alpha\big)T
+\end{equation}
+下式给出了蒸气与凝聚相两平衡曲线斜率的近似表达式
+\begin{equation}\tag{3.4.7}\label{eq:dLinvdT}
+\frac{1}{p}\frac{dp}{dT} = \frac{L}{RT^2}
+\end{equation}
+将式(\ref{eq:intL})代入式(\ref{eq:dLinvdT})得
+\[
+\frac{1}{p}\frac{dp}{dT} = \frac{L_0}{RT^2} + \frac{C_p^\beta -C_p^\alpha}{RT}
+\]
+积分得
+\[
+\ln p = A - \frac{B}{T} + C\ln T
+\]
+其中$B=L_0/R$, $C=C_p^\beta/C_p^\alpha$, A为常数.
+\end{solution}

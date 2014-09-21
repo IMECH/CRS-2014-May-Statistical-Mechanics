@@ -1,0 +1,55 @@
+\begin{problem}[4.3]
+二元理想溶液具有下列形式的化学势:
+\[
+\mu_1 = g_1(T,p) + RT\ln x_1,\qquad
+\mu_2 = g_2(T,p) + RT\ln x_2
+\]
+其中$g_i(T,p)$为纯$i$组元的化学势, $x_i$是溶液中$i$组元的摩尔分数. 当物质的量
+分别为$n_1$, $n_2$的两种纯液体在等温等压下合成理想溶液时, 试证明混合前后
+\begin{enumerate}
+\item 吉布斯函数的变化为$\Delta G = RT(n_1\ln x_1 + n_2\ln x_2)$
+\item 体积不变, 即$\Delta V$ = 0.
+\item 熵变$\Delta S = R(n_1\ln x_1 + n_2\ln x_2)$
+\item 焓变$\Delta H = 0$, 因而没有混合热.
+\item 内能变化为何?
+\end{enumerate}
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+
+\begin{enumerate}
+\item 吉布斯函数是广延量，具有相加性. 混合前两纯液体的吉布斯函数为
+\[
+G_0(T,p) = n_1g_1(T,P) + n_2g_2(T,p)
+\]
+根据$G=\sum_in_i\mu_i$, 混合后理想溶液的吉布斯函数为
+\[
+G = n_1\mu_1(T,p) + n_2\mu_2(T,p) = n_1g_1(T,P) +n_1RT\ln x_1+ n_2g_2(T,p) +n_2RT\ln x_2
+\]
+混合前后吉布斯函数的变化为
+\begin{equation}\label{eq:4-3dG}
+\Delta G = G(T,p) - G_0(T,p) = RT(n_1\ln x_1 +n_2\ln x_2)
+\end{equation}
+其中$x_1=n_1/(n_1+n_2)$, $x_2=n_2/(n_1+n_2)$分别是溶液中组元1, 2的摩尔分数.
+\item 根据$(\partial G/\partial p)_{T,n_i}=V$可知混合前后体积的变化为
+\begin{equation}\label{eq:4-3dV}
+\Delta V = \bigg(\frac{\partial}{\partial p}\Delta G\bigg)_{T,n_1,n_2} = 0
+\end{equation}
+\item 根据$(\partial G/\partial T)_{p,n_i}=-S$可知混合前后熵的变化为
+\begin{equation}\label{eq:4-3dS}
+\Delta S = -\bigg(\frac{\partial}{\partial T}\Delta G\bigg)_{p,n_1,n_2} = -R(n_1\ln x_1 + n_2\ln x_2)
+\end{equation}
+注意$x_1$和$x_2$都小于1, 故$\Delta S>0$, 混合后熵增加了.
+\item 根据焓的定义$H=G+TS$,  将式(\ref{eq:4-3dG})和式(\ref{eq:4-3dS})代入, 知混合前后焓的
+变化为
+\begin{equation}\label{eq:4-3dH}
+\Delta H =\Delta G + T\Delta S = 0
+\end{equation}
+混合是在恒温恒压下进行的.在等压过程中系统吸收的热量等于焓的增加值, 式(\ref{eq:4-3dH})表明混合过程没有混合热.
+\item 内能 $U=H-pV$. 将式(\ref{eq:4-3dH})和式(\ref{eq:4-3dV})代入,知混合前后内能的变化为
+\[
+\Delta U = \Delta H - p\Delta V = 0
+\]
+\end{enumerate}
+
+\end{solution}

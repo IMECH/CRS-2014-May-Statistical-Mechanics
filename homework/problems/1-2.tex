@@ -1,0 +1,35 @@
+\begin{problem}[1.2]
+证明任何一种具有两个独立参量$T$, $p$的物质, 其物态方程可由实验测得的体胀系数$\alpha$及等温压缩系数$\kappa_{T}$,根据下述积分求得:
+\[
+\ln V = \int (\alpha dT - \kappa_T dp)
+\]
+如果$\alpha=1/T$, $\kappa_T=1/p$, 试求物态方程.
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+由题义可设具有两个独立参量$T$, $p$的物质, 其物态方程及其全微分为
+\[
+V = V(T,p)
+\quad\Longrightarrow\quad 
+dV = \bigg(\frac{\partial V}{\partial T}\bigg)_p dT + \bigg(\frac{\partial V}{\partial p}\bigg)_T dp
+\]
+因此有
+\[
+\frac{dV}{V} = \frac{1}{V}\bigg(\frac{\partial V}{\partial T}\bigg)_p dT + \frac{1}{V}\bigg(\frac{\partial V}{\partial p}\bigg)_T dp = \alpha dT -\kappa_T dp
+\]
+将$\alpha=1/T$, $\kappa_T=1/p$代入上式得
+\[
+\frac{dV}{V} = \frac{dT}{T} - \frac{dp}{p}
+\]
+选择适当的积分路径$(p_0,T_0)\rightarrow(p_0,T)\rightarrow(p,T)$对上式两端同时积分得
+\[
+\int_{V_0}^V\frac{dV}{V} = \int_{T_0}^T \frac{dT}{T} - \int_{p_0}^p\frac{dp}{p}
+\quad\Longrightarrow\quad 
+\ln V  + \ln P - \ln T = \ln V_0  + \ln P_0 - \ln T_0
+\]
+因此最终可得该物质的物态方程为
+\[
+\frac{PV}{T} = \frac{P_0V_0}{T_0} = C
+\]
+其中$C$为待定常数, 可由实验进一步确定.
+\end{solution}

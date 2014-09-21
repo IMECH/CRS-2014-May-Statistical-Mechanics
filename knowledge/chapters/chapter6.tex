@@ -1,0 +1,147 @@
+\section{近独立粒子的最概然分布}
+
+% ---------------------------------------
+
+\subsection{粒子运动状态的经典描述}
+粒子遵循经典力学的运动规律, 对粒子运动状态的描述称为经典描述. 粒子的状态由粒子的$r$个\textbf{广义坐标}$q_1,q_2,\cdots,q_r$ 和与之共轭的$r$个\textbf{广义动量}$p_1,p_2,\cdots,p_r$在该时侯的数值确定. 
+
+\textbf{粒子能量}$\varepsilon$是其广义坐标和广义动量的函数
+\[
+\varepsilon = \varepsilon(p_1,p_2,\cdots,p_r; q_1,q_2,\cdots,q_r).
+\]
+对于自由粒子, 线形谐振子和转子, 其能量分别为:
+\begin{itemize}
+\item\textbf{自由粒子}: 不受力的作用而自由运动的粒子. 其能量就是其动能
+\[
+\varepsilon = \frac{1}{2m}(p_x^2 + p_y^2 + p_z^2)
+\]
+\item\textbf{线形谐振子}: 质量为$m$的粒子在弹性力$F=-Ax$作用下将沿$x$轴在原点附近作简谐振动. 其能量为动能和势能和
+\[
+\varepsilon = \frac{p^2}{2m} + \frac{A}{2}x^2 = \frac{p^2}{2m} + \frac{1}{2}m\omega^2 x^2
+\]
+\item\textbf{转子}: 质量为$m$的质点被具有一定长度的轻杆系于原点$O$时所作的运动. 其能量就是其动能
+\[
+\varepsilon = \frac{1}{2I}\bigg( p_\theta^2 + \frac{1}{\sin^2\theta} p_\phi^2\bigg)
+\]
+选择$z$轴平行$M$,可以简化为$\varepsilon=M^2/(2I)$
+\end{itemize}
+
+
+
+
+% ---------------------------------------
+
+\subsection{粒子运动状态的量子描述}
+波粒二象性表明微观粒子不可能同时具有确定的动量和坐标. 量子力学所能容许的最精准的描述中, 粒子坐标$q$的不确定值与相应动量$p$的不确定值关系:$\Delta q\Delta p\approx h$ 称为不确定关系. $h$是普朗克常量.
+
+用$p_1,p_2,\cdots,p_r; q_1,q_2,\cdots,q_r$共$2r$个变量为直角坐标, 构成一个的$2r$维空间称为\textbf{$\mu$空间}.
+用坐标$q$和动量$p$来描述粒子的运动状态，一个状态必然对应$\mu$空间的一个体积，我们称他为一个\textbf{相格}. 
+
+对于线形谐振子, 转子和自由粒子, 其量子能量式分别为:
+\[
+\varepsilon_n = \hbar \omega\Big(n+\frac{1}{2}\Big), \quad n = 0,1,2\cdots
+\]
+\[
+\varepsilon_l = \frac{l(l+1)\hbar}{2I}, \quad l = 0,1,2\cdots
+\]
+\[
+\varepsilon = \frac{1}{2m}\big(p_x^2+p_y^2+p_z^2\big) = \frac{2\pi^2\hbar}{m}\frac{n_x^2+n_y^2+n_z^2}{L^2}
+\]
+
+\subsection{非简并能级, 简并度, 态密度}
+
+\begin{itemize}
+\item\textbf{非简并能级}: 如果某一能级只有一个量子态, 则该能级称为非简并能级.
+\item\textbf{简并度}: 如果某一能级只有$n$个量子态, 则称该能级的简并度为$n$.
+\item\textbf{态密度}: 单位能量间隔内可能的状态数. 在体积$V$内, 在$\varepsilon$到$\varepsilon+\d \varepsilon$的能量范围内, 自由粒子的态密度为
+\[
+D(\varepsilon) \d \varepsilon = \frac{2\pi V}{h^3}(2m)^{3/2}\varepsilon^{1/2}\d \varepsilon
+\]
+\end{itemize}
+
+
+% ---------------------------------------
+
+\subsection{系统微观运动状态的描述}
+\begin{itemize}
+\item\textbf{全同粒子}:  具有完全相同的内部属性(相同的质量, 电荷, 自旋等)的同类粒子.
+\item\textbf{全同粒子系统}: 是指具有全同粒子构成的系统.
+\item\textbf{近独立粒子}: 系统间粒子相互作用很弱 ,相互作用的平均能量小于单个粒子的平均能量.
+\item\textbf{近独立粒子系统}: 是指系统中粒子之间相互作用很弱, 相互作用的平均能量远小于单个的平均能量, 因而可以忽略粒子间的相互作用, 整个系统的能量表达为单个粒子的能量之和.
+\item\textbf{微观粒子全同性原理}: 全同粒子是不可分辨的(经典物理可分辨), 在含有多个全同粒子的系统中,将任何两个全同粒子加以对换, 不改变整个系统的微观运动状态.
+\item\textbf{微观粒子分两类}: 玻色子(自旋量子数是整数)和费米子(自旋量子数是半整数). 
+\item\textbf{玻色系统}: 粒子不可分辨, 每一个个体量子态所能容纳的粒子数不受限制.
+\item\textbf{费米系统}: 费米子组成的系统. 遵从泡利不相容原理. 粒子不可分辨, 每一个个体量子态最多能容纳一个粒子.
+\item\textbf{波尔兹曼系统}: 由可分辨的全同近独立粒子组成, 且处于一个个体量子态上的粒子束不受限制的系统.
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{等概率原理}
+对于处在平衡状态的孤立系统,系统各个可能的微观状态出现的概率是相等的.
+
+% ---------------------------------------
+
+\subsection{量子统计和经典统计的微观状态数表达式}
+\begin{itemize}
+\item\textbf{玻尔兹曼系统微观状态数}:
+\[
+\Omega_{M.B.} = \frac{N!}{\prod\limits_l a_l !}\prod\limits_l \omega_l^{a_l}
+\]
+其中$a_l$为粒子数, $w$为简并度.
+\item\textbf{玻色系统微观状态数}:
+\[
+\Omega_{B.E.} = \prod\limits_l \frac{(\omega_l + a_l - 1)!}{a_l!(\omega_l-1)!}
+\]
+\item\textbf{费米系统微观状态数}:
+\[
+\Omega_{F.D.} = \prod\limits_l \frac{\omega_l !}{a_l!(\omega_l-a_l)!}
+\]
+\item\textbf{经典极限条件/非简并性条件}: 对所有的$l$
+\[
+\frac{a_l}{\omega_l}\ll 1
+\]
+\item\textbf{玻尔兹曼经典粒子微观状态数}:
+\[
+\Omega_{c1} = \frac{N!}{\prod\limits_{l} a_l !}\prod\limits_l\bigg(\frac{\Delta \omega_l}{h_0^2}\bigg)^{a_l}
+\]
+经典粒子可以分辨, 处在经典统计的相格内的经典粒子数没有限制.
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{最概然分布、波尔兹曼分布}
+\begin{itemize}
+\item\textbf{最概然分布}: 微观状态数最多的分布, 出现概率最大. 
+\item\textbf{波尔兹曼分布}
+\begin{itemize}
+\item 经典统计中, 玻尔兹曼系统粒子最概然分布
+\[
+a_l = \mathrm{e}^{-\alpha-\beta \varepsilon_s}\frac{\Delta \omega_l}{h_0^r}
+\]
+两拉氏乘子由两式$N=\sum_l a_l$, $E=\sum_l \varepsilon_l a_l$确定.
+\item 量子统计中, 玻尔兹曼系统粒子最概然分布
+\[
+a_l = \omega_l\mathrm{e}^{-\alpha-\beta \varepsilon_s}
+\]
+两拉氏乘子由两式$N=\sum_l a_l$, $E=\sum_l \varepsilon_l a_l$确定.
+\end{itemize}
+\item\textbf{玻色系统最概然分布}:
+\[
+a_l = \frac{\omega_l}{\exp\{\alpha+\beta\varepsilon_l\}-1}
+\]
+\item\textbf{费米系统最概然分布}:
+\[
+a_l = \frac{\omega_l}{\exp\{\alpha+\beta\varepsilon_l\}+1}
+\]
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{三种分布的关系}
+满足经典极限条件的三分布的关系
+\[
+\Omega_{B.E} = \frac{\Omega_{M.B.}}{N!} = \Omega_{F.D.}
+\]
+
+% ---------------------------------------

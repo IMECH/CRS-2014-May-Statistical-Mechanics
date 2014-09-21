@@ -1,0 +1,57 @@
+\section{均匀物质的热力学性质}
+
+\subsection{内能, 焓, 自由能和吉布斯函数的全微分}
+\[
+\d U = T\d S - p\d V = \bigg(\frac{\partial U}{\partial S}\bigg)_V\d S + \bigg(\frac{\partial U}{\partial V}\bigg)_S\d V
+\]
+\[
+\d H = T\d S + V\d p = \bigg(\frac{\partial H}{\partial S}\bigg)_p\d S + \bigg(\frac{\partial S}{\partial p}\bigg)_S\d p
+\]
+\[
+\d F = -S\d T - p\d V = \bigg(\frac{\partial F}{\partial T}\bigg)_V\d T + \bigg(\frac{\partial F}{\partial V}\bigg)_T\d V
+\]
+\[
+\d G = -S\d T + V\d P = \bigg(\frac{\partial G}{\partial T}\bigg)_p\d T + \bigg(\frac{\partial G}{\partial p}\bigg)_T\d p
+\]
+% -------------------------------------------------------
+
+\subsection{麦氏关系}
+麦氏关系为$S$, $T$, $p$, $V$四个变量的偏导数之间的关系
+\[
+\Big(\frac{\partial T}{\partial V}\Big)_S=-\Big(\frac{\partial p
+}{\partial S}\Big)_V  \quad\qquad \Big(\frac{\partial T}{\partial
+p}\Big)_S=\Big(\frac{\partial V }{\partial S}\Big)_p
+\]
+
+\[
+\Big(\frac{\partial S}{\partial V}\Big)_T=\Big(\frac{\partial p
+}{\partial T}\Big)_V  \quad\qquad \Big(\frac{\partial S}{\partial
+p}\Big)_T=-\Big(\frac{\partial V }{\partial T}\Big)_p
+\]
+
+% -------------------------------------------------------
+
+\subsection{基本热力学函数}
+\begin{itemize}
+\item \textbf{物态方程}: $\displaystyle p = p(T,V),\quad V = V(T,p)$.
+\item \textbf{内能的全微分}
+\[
+\d U = C_v \d T + \Bigg[ T\bigg(\frac{\partial p}{\partial T}\bigg)_V - p\Bigg]\d V
+\]
+\[
+\d H = C_p \d T + \Bigg[V - T\bigg(\frac{\partial V}{\partial T}\bigg)_P \Bigg]\d p
+\]
+\item \textbf{熵的全微分}
+\[
+\d S = \frac{C_V}{T} \d T + \bigg(\frac{\partial p}{\partial T}\bigg)_V \d V 
+\]
+\[
+\d S = \frac{C_p}{T} \d T - \bigg(\frac{\partial V}{\partial T}\bigg)_p \d p
+\]
+\end{itemize}
+% -------------------------------------------------------
+
+\subsection{特性函数}
+如果适当的选择独立变量(自然变量), 只要知道一个热力学函数, 就可以
+通过求偏导数而求得均匀系统的全部热力学函数, 从而把均匀系统的平衡性质完全确定,
+这个热力学函数就是特性函数. 如 $F$, $G$.

@@ -1,0 +1,27 @@
+\begin{problem}[1.9]
+试证明: 理想气体在某一过程中的热容量$C_n$如果是常数, 该过程一定是多方过程, 多方指数$n=\frac{C_n-C_p}{C_n-C_V}$. 假设气体的定压热容量和定容热容量是常量.
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+由热力学第一定律, 对于理想气体的准静态过程, 其内能变化
+\[
+dU = C_v dT = \dbar Q + \dbar W = C_n dT -pdV \quad\Longrightarrow\quad (C_n-C_V)dT = pdV
+\]
+由理想气体状态方程$pV = nRT=(C_p-C_V)T$与上式两端分别相乘后得
+\begin{equation}\label{eq:CnCV}
+(C_n-C_V)\frac{dT}{T} = (C_p-C_V)\frac{dV}{V}
+\end{equation}
+将理想气体状态方程进行微分有
+\begin{equation}\label{eq:VdppdV}
+Vdp + pdV = mR dT \quad\Longrightarrow\quad \frac{dp}{p} + \frac{dV}{V} = \frac{dT}{T}
+\end{equation}
+由式(\ref{eq:CnCV})和式(\ref{eq:VdppdV})联立可得
+\[
+(C_n-C_V)\frac{dp}{p} + (C_n-C_p)\frac{dV}{V} = 0
+\]
+代入多方指数$n=\frac{C_n-C_p}{C_n-C_V}$, 上式化为
+\[
+\frac{dp}{p} + n\frac{dV}{V} = 0 \quad\Longrightarrow\quad  PV^n=C
+\]
+其中$C$为常数, 因此该过程是多方过程.
+\end{solution}

@@ -1,0 +1,26 @@
+\begin{problem}[7.18]
+试求双原子分子理想气体的振动熵.
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+将双原子分子中原子的相对振动近似看作简谐振动. 以$\omega$表示振动
+的圆频率, 振动能级为
+\[
+\omega = \bigg(n+\frac{1}{2}\bigg)\hbar,\quad n=0,1,2,\cdots
+\]
+振动配分函数为
+\[
+Z_1^\mathrm{v} = \sum_{n=0}^\infty \exp\{ -\beta \hbar \omega (n+1/2)\}
+= \frac{\exp\{-\beta\hbar\omega/2\}}{1-\exp\{-\beta\hbar\omega\}}
+\]
+\[
+\ln Z_1^\mathrm{v} = -\frac{1}{2}\beta\hbar \omega -\ln\Big(1-\exp\{-\beta\hbar\omega\}\Big)
+\]
+双原子理想气体的熵为
+\begin{align*}
+S^{\mathrm{v}} & =NK\bigg(\ln Z_{1}^{\mathrm{v}}-\beta\frac{\partial}{\partial\beta}\ln Z_{1}^{\mathrm{v}}\bigg)\\
+ & =Nk\bigg[\frac{\beta\hbar\omega}{\exp\{\beta\hbar\omega\}-1}-\ln\big(1-\exp\{-\beta\hbar\omega\}\big)\bigg]\\
+ & =Nk\bigg[\frac{\theta_{v}/T}{\exp\{\theta_{v}/T\}-1}-\ln\big(1-\exp\{-\theta_{v}/T\}\big)\bigg]
+\end{align*}
+其中$\theta_v=\hbar\omega/k$是振动的特征温度.
+\end{solution}

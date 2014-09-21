@@ -1,0 +1,71 @@
+\section{多元系的复相平衡和化学平衡热力学第三定律}
+
+% ---------------------------------------
+
+\subsection{多元系的热力学方程}
+\[
+\d G = -S\d T + V\d p + \sum_i\mu_i\d n_i 
+\]
+\[
+\d U = T\d S + p\d V + \sum_i\mu_i\d n_i 
+\]
+\[
+S\d T - V\d p + \sum_i\mu_i\d n_i = 0
+\]
+
+其中$X=\{V, U, S\}$可表示为$X= \sum_i(n_i\partial X/\partial n_i)_{T,p,n_j}$.
+% ---------------------------------------
+
+\subsection{多元系的相变平衡条件}
+系统达到平衡时,两相中各组员的化学势必分别相
+等: $\mu_i^\alpha = \mu_i^\beta$
+
+% ---------------------------------------
+
+\subsection{吉布斯相律}
+若多元系有$\phi$个相, 每相有$k$个组元, 则多元复相的自由度数$f$有
+\[
+f = k + 2 - \phi
+\]
+% ---------------------------------------
+
+\subsection{化学平衡条件}
+若在反应方程中$i$组元的系数为$\nu_i$, 化学势为$\mu_i$. 则化学平衡条件为:
+\[
+\sum_i \nu_i \mu_i = 0
+\]
+% ---------------------------------------
+
+\subsection{混合理想气体的性质}
+\begin{itemize}
+\item \textbf{道尔顿分压定律}: 混合气体压强等于各组元分压之和: $p=\sum_ip_i$, 其中的$p_i$为$i$组元的分压.
+\item \textbf{混合理想气体物态方程}: $pV=\sum_{i}n_iRT$
+\item \textbf{混合理想气体吉布斯函数}
+\[
+G=\sum_in_i\mu_i=\sum_in_iRT\Big[\phi_i+\ln(x_ip)\Big]
+\]
+\item \textbf{混合理想气体的熵}
+\[
+S = \sum_i n_i\bigg[\int c_{pi}\frac{\d T}{T}-R\ln(x_i,p) + s_{i0}\bigg]
+\]
+\item \textbf{混合理想气体的焓}
+\[
+H = \sum_i n_i\bigg[\int c_{pi}\d T + h_{i0}\bigg]
+\]
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{理想气体的化学平衡（平衡常量）}
+平衡常量$K$及定压平衡常量$K_p$
+\[
+K(T,p) = p^{-\nu}K_p, \quad (\nu=\sum_i v_i)
+\]
+\[
+\ln K_p = -\sum_i \nu_i\phi_i(T)
+\]
+
+% ---------------------------------------
+
+\subsection{热力学第三定律}
+不可能通过有限的步骤使一个物体冷却到绝对温度的零度.

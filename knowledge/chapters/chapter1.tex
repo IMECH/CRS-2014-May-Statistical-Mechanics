@@ -1,0 +1,159 @@
+\section{热力学的基本规律}
+
+\subsection{热力学系统:孤立系, 闭系, 开系}
+\begin{itemize}
+\item \textbf{孤立系统}: 与其它物质既没有物质交换也没有能量交换的系统.
+\item \textbf{闭口系统}: 与外界没有物质交换但是有能量交换的系统.
+\item \textbf{开口系统}: 与外界既有物质交换又有能量交换的系统.
+\end{itemize}
+
+\subsection{热力学平衡态}
+一个孤立系统,不论其初态如何复杂,经过足够长的时间后,将会到达这样的状态,系统的各种宏观性质在长时间内不发生任何变化。
+
+\subsection{热力学第零定律, 理想气体温标}
+\begin{itemize}
+\item \textbf{热力学第零定律}: 同时与第三物体处于热平衡, 则这两个物体也处于热平衡状态.
+\item \textbf{理想气体温标}: $T_v = 273.16\times P/P_t$. 纯水三相点温度(水, 冰, 水蒸气三相平衡共存)为273.16K
+$P_t$为三相点下温度计中气体的压强.
+\end{itemize}
+
+\subsection{体胀系数, 压强系数, 等温压缩系数, 玻意耳定律, 阿伏加德罗定律}
+\begin{itemize}
+\item \textbf{体胀系数}: 压力保持不变,温度升高 1K 所引起的物体体积的相对变化.
+\[
+\alpha = \frac{1}{V}\bigg(\frac{\partial V}{\partial T}\bigg)_p
+\]
+\item \textbf{压强系数}: 体积保持不变,温度升高 1K 所引起的物体压强的相对变化.
+\[
+\beta = \frac{1}{p}\bigg(\frac{\partial p}{\partial T}\bigg)_V
+\]
+\item \textbf{等温压缩系数}: 温度不变,增加单位压强引起的物体体积的相对变化.
+\[
+\kappa_T = -\frac{1}{p}\bigg(\frac{\partial V}{\partial p}\bigg)_T
+\]
+\item \textbf{玻意耳定律}: $PV=C$, 常数$C$在不同温度下有不同数值. 对于固定质量的气体, 在温度不变时压强和体积的乘积是一个常数.
+\item \textbf{阿伏伽德罗定律}: 相同温度, 压强下相等体积所含的各种气体的物质的量相等.
+\end{itemize}
+\subsection{理想气体物态方程, 范德瓦耳斯方程}
+\begin{itemize}
+\item \textbf{理想气体物态方程}: 忽略气体分子之间的相互作用.
+\[
+PV=nRT
+\] 
+
+\item \textbf{范德瓦尔兹方程}: 在理想气体物态方程基础上考虑气体分子之间的相互作用.
+\[
+\bigg(p+\frac{an^2}{V^2}\bigg)(V-nb) = nRT
+\]
+其中$a$为分子势能因子, $b$ 为分子体积因子.
+
+\end{itemize}
+
+
+\subsection{准静态过程, 气体体积改变所做的功}
+\begin{itemize}
+\item \textbf{准静态过程}: 若系统从一个平衡状态连续经过无数个中间的平衡状态过渡到另一个平衡状态, 即过程中系统偏离平衡状态无限小并且随时恢复平衡状态, 过程均匀缓慢且无任何突变.
+
+\item \textbf{气体体积改变所做的功}: $\dbar  W = -p \d V$
+\end{itemize}
+
+\subsection{热力学第一定律}
+自然界一切物体都具有能量, 能量有各种不同形式, 它能从一种形式转化为另一种形式, 从一个物体传递给另一个物体, 在转化和传递过程中能量的数量不变.
+\subsection{热容量, 焓的定义和表达式}
+\begin{itemize}
+\item \textbf{热容量}: 系统在某一过程中温度升高1K所吸收的热量.
+\item \textbf{焓}: $H =U + pV$. 表征等压过程中系统从外界吸收的热量等于\textbf{状态函数}焓的增值.
+\end{itemize}
+
+
+\subsection{焦耳定律, 内能}
+\begin{itemize}
+\item \textbf{焦耳定律}: 气体的内能只是温度的函数, 与体积无关, 即$(\partial U/\partial V)_T = 0$.
+\item \textbf{内能}: 微观角度, 气体内能是气体中分子无规则远东能量总和的统计平均值.
+\end{itemize}
+
+\subsection{绝热过程的方程}
+\[
+pV^\gamma = \textrm{常量},\quad
+TV^{\gamma-1} = \textrm{常量},\quad
+\frac{p^{\gamma-1}}{T^\gamma}=\textrm{常量}
+\]
+
+\subsection{卡诺循环的四个过程, 卡诺循环效率}
+\begin{itemize}
+\item\textbf{等温膨胀过程}: 气体从状态$(p_1,V_1,T_1)$等温膨胀而达到状态$(p_2,V_2,T_1)$，在这过程中外界做功
+\[
+W=-\int_{V_1}^{V_2}p\textrm{d}V=-C\int_{V_1}^{V_2}\frac{\textrm{d}V}{V}=-RT\ln\frac{V_2}{B_1}
+\]
+由于理想气体的\textbf{等温}膨胀过程中内能不变, 所以气体从外界吸收的热量为
+\[
+Q=-W=RT\ln\frac{V_2}{V_1}
+\]
+\item\textbf{绝热膨胀过程}: 气体从状态$(p_1,V_1,T)$等温膨胀而达到状态$(p_2,V_2,T)$，在这过程中外界做功
+\begin{align*}
+W & =-\int_{V_{1}}^{V_{2}}p\textrm{d}V=-C\int_{V_{1}}^{V_{2}}\frac{\textrm{d}V}{V^{r}}\\
+ & =\frac{C}{r-1}\bigg(\frac{1}{V_{2}^{r-1}}-\frac{1}{V_{1}^{r-1}}\bigg)
+\end{align*}
+但$p_1V_1^r=p_2V_2^r=C$, 所以上式可以化为
+\[
+W=\frac{p_2V_2-p_1V_1}{r-1}=\frac{R(T_2-T_1)}{r-1}=C_V(T_2-T_1)
+\]
+由于是\textbf{绝热}过程，故从外界收热$Q=0$.
+\item \textbf{等温压缩过程}: 与等温膨胀过程类似.
+\item \textbf{绝热压缩过程}: 与绝热膨胀过程类似.
+\item \textbf{卡诺循环效率}: 从高温热源吸热$Q_1$,对外做功$W$
+\[
+\eta = \frac{W}{Q_1} = \frac{R(T_1-T_2)\ln (V_2/V_1)}{RT_1\ln (V_2/V_1)} = 1-\frac{T_2}{T_1}
+\]
+\end{itemize}
+
+\subsection{热力学第二定律}
+\begin{itemize}
+\item\textbf{克氏表述}: 不可能把热量从低温物体传到高温物体而不引起其他变化.
+\item\textbf{开氏表述}: 不可能从单一热源吸热使之完全变成有用的功而不引起其他变化.
+\end{itemize}
+
+\subsection{可逆过程}
+如果一个过程发生后它所产生的影响可以完全消除而令一切恢复原状这一过程称为可逆过程.
+\subsection{卡诺定律}
+\begin{itemize}
+\item \textbf{定律}: 所有工作于两个一定温度间的热机, 可逆机效率最高. 
+\item \textbf{推论}: 所有工作于两个一定温度间的可逆热机, 其效率相等.
+\end{itemize}
+\subsection{克劳修斯等式与不等式}
+工作于两个一定温度之间的任何一个热机的效率不能大于工作于这两个温度之间的可逆热机的效率.
+\[
+\eta = 1-\frac{Q_2}{Q_1}\leq 1-\frac{T_2}{T_2} \quad\Longrightarrow\quad \frac{Q_1}{T_1}-\frac{Q_2}{T_2}\leq 0
+\]
+\subsection{熵和热力学基本微分方程}
+热力学基本微分方程: $\d  S = \frac{\dbar Q}{T}$.  对可逆过程$\delta Q =\d U+p\d V$有:
+\[
+\d  S= \frac{\d U + p\d V}{T} \quad\textrm{或}\quad \mathrm{\d U} = T\d S - p \d V
+\]
+基本方程一般形式:
+\[
+\dbar  U = T\d S + \sum_i Y_i \d y_i
+\]
+
+\subsection{理想气体的熵表达式}
+对于n mol的理想气体, 熵可表示为
+\[
+S = n C_{p,m}\ln T - nR\ln p + S_{m0}
+\]
+\subsection{熵增加原理及其应用}
+\begin{itemize}
+\item \textbf{原理}: 在孤立热力系所发生的不可逆微变化过程中, 熵的变化量永远大于系统从热源吸收的热量与热源的热力学温度之比. 
+\item \textbf{应用}: 可用于度量过程存在不可逆性的程度; 孤立系统熵必增.
+\end{itemize}
+\subsection{自由能和吉布斯函数}
+
+\begin{itemize}
+\item\textbf{自由能}: 自由能的减小是在等温过程中从系统所获得的最大的功. 
+\[
+F = U - TS, \quad \d F = -S \d T - p\d V
+\]
+\item\textbf{吉布斯函数}: 在封闭系统中, 等温定压且不作非体积功的过程总是自动地向着系统的吉布斯函数减小的方向进行, 直到系统的吉布斯函数达到一个最小值为止. 系统吉布斯函数的变化可以作为过程方向和限度的判断依据.
+\[
+G = F + pV = U-TS+pV
+\]
+\end{itemize}

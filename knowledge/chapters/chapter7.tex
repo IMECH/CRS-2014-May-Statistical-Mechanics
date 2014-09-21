@@ -1,0 +1,136 @@
+\section{玻尔兹曼统计}
+
+% ---------------------------------------
+
+\subsection{热力学量的统计表达式}
+\begin{itemize}
+\item\textbf{量子统计}: 对于配分函数为
+\[
+z_1 =\sum_l \omega_l \mathrm{e}^{-\beta \varepsilon_l}, \quad N= \mathrm{e}^{-\alpha} Z_1
+\]
+则\textbf{内能}, \textbf{广义作用力}, \textbf{熵}的统计表达式分别为
+\[
+U = -N\frac{\partial}{\partial\beta}\ln Z_1 
+\]
+\[
+F = \textcolor{red}{-}\frac{N}{\beta}\frac{\partial}{\partial y}\ln Z_1 ,\quad \textrm{如} p = \textcolor{blue}{+}\frac{N}{\beta}\frac{\partial}{\partial y}\ln Z_1 
+\]
+\[
+\underbrace{S = k\ln\Omega}_{\textrm{玻尔兹曼关系}} = Nk\bigg( \ln Z_1 -\beta \frac{\partial}{\partial} \ln Z_1 \bigg) 
+\]
+对于满足经典极限条件的玻色(费米)系统: $S=k\ln(\Omega_{M.B.}/N!)$.  自由能定域系统: $F=-NkT\ln Z_1$.
+满足极限条件的玻色/费米系统:  $F=-NkT\ln Z_1 + kT\ln N!$.
+
+\item\textbf{经典统计}：配分函数和波尔兹曼分布经典表达式
+\[
+Z_1=\sum_l \mathrm{e}^{-\beta \varepsilon_l}\frac{\Delta \omega_l}{h_0^r}
+\]
+\[
+a_l = \mathrm{e}^{-\alpha -\beta\varepsilon_l}\frac{\Delta \omega_l}{h_0^r}
+=\frac{N}{Z_1}\mathrm{e}^{-\beta\varepsilon_l}\frac{\Delta \omega_l}{h_0^r}
+\]
+\end{itemize}
+% ---------------------------------------
+
+\subsection{理想气体的物态方程表达式, 经典极限条件}
+\begin{itemize}
+\item\textbf{理想气体的物态方程}:
+\[
+p = \frac{N}{\beta}\frac{\partial}{\partial V}\ln Z_1 = \frac{NkT}{V}, 
+\quad
+Z_1 = V\bigg(\frac{2\pi\m}{\hbar^2\beta}\bigg)^{3/2}
+\]
+\item\textbf{经典极限条件}:
+\[
+\mathrm{e}^\alpha = \frac{V}{N}\bigg(\frac{2\pi mkT}{h^2}\bigg)^{3/2} \gg 1
+\quad\textrm{或}\quad
+n\lambda^3\ll 1
+\]
+\end{itemize}
+
+% ---------------------------------------
+
+
+\subsection{麦克斯韦速度分布率、最概然速率}
+\begin{itemize}
+\item\textbf{麦克斯韦速度分布率}: 
+%\[
+%f(v_x,v_y,v_z)= n\bigg(\frac{m}{2\pi kT}\bigg)^{3/2}\exp\Big\{-\frac{m}{2kT}(v_x^2+v_y^2+v_z^2)\Big\}
+%\]
+\[
+f(v_{x},v_{y},v_{z})=n\bigg(\frac{m}{2\pi kT}\bigg)^{3/2}\mathrm{e}^{-\frac{m}{2kT}(v_{x}^{2}+v_{y}^{2}+v_{z}^{2})}
+\]
+萁中$n=N/V$为单位体积内的分子数, $m$为质量. 则速度在$\d v_x\d v_y\d v_z $内的分子数可表示为$f(v_x,v_y,v_z)\d v_x\d v_y\d v_z $.
+\item\textbf{最概然速率}: 使速度分布函数取最大值的速率
+\[
+v_{m} = \sqrt{2kT/m}
+\]
+\item\textbf{平均速率}:
+\[
+\overline{v} = \sqrt{8kT/(\pi m)}
+\]
+\item\textbf{方均根速率}:
+\[
+v_{s} = \sqrt{3kT/m}
+\]
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{能量均分定律}
+对于处在温度为$T$的平衡状态的经典系统, 粒子能量中每个平方项的平均值等于$kT/2$.
+
+\subsection{气/固体的内能, 定容和定压热容量}
+\begin{itemize}
+\item\textbf{单原子分子}:
+\[
+U = \frac{3}{2}NkT,\quad
+C_v = \frac{3}{2}Nk,\quad
+C_p = \frac{5}{2}Nk
+\]
+\item\textbf{双原子分子}:
+\[
+U = \frac{5}{2}NkT,\quad
+C_v = \frac{5}{2}Nk,\quad
+C_p = \frac{7}{2}Nk
+\]
+\item\textbf{固体分子}:
+\[
+U = 3NkT,\quad
+C_v = 3Nk,\quad
+C_p = C_v + \frac{TVa^2}{K_T}
+\]
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{理想气体的内能和热容量}
+\[
+U = -N\frac{\partial}{\partial\beta}\ln Z_1 = 
+-N\frac{\partial}{\partial\beta}\big(
+\underbrace{\ln Z_1^\mathrm{t}}_{\textrm{平动}}
++\underbrace{\ln Z_1^\mathrm{v}}_{\textrm{振动}}
++\underbrace{\ln Z_1^\mathrm{r}}_{\textrm{转动}}
+\big)
+\]
+\[
+C_v = \underbrace{C_v^\mathrm{t}}_{\textrm{平动}}
++\underbrace{C_v^\mathrm{v}}_{\textrm{振动}}
++\underbrace{C_v^\mathrm{r}}_{\textrm{转动}}
+\]
+
+% ---------------------------------------
+
+\subsection{单原子理想气体的熵}
+\[
+S = \frac{3}{2}Nk\ln T + Nk\ln \frac{V}{N} + \frac{3}{2}Nk\Bigg[\frac{5}{3}+\ln\bigg(\frac{2\pi mk}{h^2}\bigg)\Bigg]
+\]
+
+% ---------------------------------------
+
+\subsection{固体的热容量}
+\[
+C_v = 3Nk\bigg(\frac{\theta_E}{T}\bigg)^2 \frac{\exp\{\theta_E/T\}}{\big(\exp\{\theta_E/T\}-1\big)^2}
+\]
+爱因斯坦特征温度: $k\theta_E = \hbar \omega$. 当$T\gg\theta_E$, 上式可近似为$C_v=3Nk$; 当$T\ll\theta_E$上式可近似为$C_v=3Nk(\theta_E/T)^2\exp\{-\theta_E/T\}$.
+

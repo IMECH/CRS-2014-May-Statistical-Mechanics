@@ -1,0 +1,52 @@
+\begin{problem}[3.2]
+试由式(3.1.12)导出式(3.1.13). 即由
+\[
+\delta^2 S=\Bigg[\bigg(\frac{\partial^2S}{\partial U^2}\bigg)(\delta U)^2 + 2\frac{\partial^2 S}{\partial U\partial V}\delta U\delta V + \bigg(\frac{\partial^2 S}{\partial V^2}\bigg)(\delta V)^2\Bigg]<0
+\]
+导出
+\[
+\delta^2 S = -\frac{C_v}{T^2}(\delta T)^2 + \frac{1}{T}\bigg(\frac{\partial p}{\partial V}\bigg)_T(\delta V)^2 < 0
+\]
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+由热力学基本方程$TdS = dU + pdV$可得
+\[
+\bigg(\frac{\partial S}{\partial U}\bigg)_v = \frac{1}{T},
+\qquad 
+\bigg(\frac{\partial S}{\partial V}\bigg)_U = \frac{p}{T}
+\]
+将课本中的式
+\begin{equation}\tag{3.1.12}
+\delta^2 S = \Bigg[
+\bigg(\frac{\partial^2S}{\partial U^2}\bigg) (\delta U)^2 
++ 2 \frac{\partial^2S}{\partial U\partial V}\delta U\delta V
++ \bigg(\frac{\partial^2S}{\partial V^2}\bigg) (\delta V)^2 
+\Bigg] <0
+\end{equation}
+进行改写并代入以上两式得
+\begin{align}\label{eq:delta2s}
+\delta^{2}S & =\Bigg[\bigg(\frac{\partial^{2}S}{\partial U^{2}}\bigg)(\delta U)^{2}+2\frac{\partial^{2}S}{\partial U\partial V}\delta U\delta V+\bigg(\frac{\partial^{2}S}{\partial V^{2}}\bigg)(\delta V)^{2}\Bigg]\nonumber\\
+ & =\Bigg[\frac{\partial}{\partial U}\bigg(\frac{\partial S}{\partial U}\bigg)\delta U+\frac{\partial}{\partial V}\bigg(\frac{\partial S}{\partial U}\bigg)\delta V\Bigg]\delta U+\Bigg[\frac{\partial}{\partial U}\bigg(\frac{\partial S}{\partial V}\bigg)\delta U+\frac{\partial}{\partial V}\bigg(\frac{\partial S}{\partial V}\bigg)\delta V\Bigg]\delta V\nonumber\\
+ & =\Bigg[\frac{\partial}{\partial U}\bigg(\frac{1}{T}\bigg)\delta U+\frac{\partial}{\partial V}\bigg(\frac{1}{T}\bigg)\delta V\Bigg]\delta U+\Bigg[\frac{\partial}{\partial U}\bigg(\frac{p}{T}\bigg)\delta U+\frac{\partial}{\partial V}\bigg(\frac{p}{T}\bigg)\delta V\Bigg]\delta V\nonumber\\
+ & =\Bigg[\delta\bigg(\frac{1}{T}\bigg)\delta U+\delta\bigg(\frac{p}{T}\bigg)\delta V\Bigg]<0
+\end{align}
+若以$T$, $V$为自变量, 则有
+\begin{equation}\label{eq:deltaU}
+\delta U = \Big(\frac{\partial U}{\partial T}\Big)_V \delta T + \Big(\frac{\partial U}{\partial V}\Big)_T \delta V
+= C_V \delta T + \Bigg[ T\bigg(\frac{\partial p}{\partial T}\bigg)_V - p \Bigg]\delta V
+\end{equation}
+
+\begin{equation}\label{eq:deltainvT}
+\delta \bigg(\frac{1}{T}\bigg) = \bigg(\frac{\partial}{\partial T}\frac{1}{T}\bigg)_V \delta T + \bigg(\frac{\partial}{\partial V}\frac{1}{T}\bigg)_T\delta V = -\frac{1}{T^2}\delta T 
+\end{equation}
+
+\begin{equation}\label{eq:deltafracpT}
+\delta \bigg(\frac{p}{T}\bigg) = \bigg(\frac{\partial}{\partial T}\frac{p}{T}\bigg)_V \delta T + \bigg(\frac{\partial}{\partial V}\frac{p}{T}\bigg)_T \delta V 
+= \frac{1}{T^2}\Bigg[ T\bigg(\frac{\partial p}{\partial T}\bigg)_V - p \Bigg]\delta T + \frac{1}{T}\bigg(\frac{\partial p}{\partial V}\bigg)_T \delta V
+\end{equation}
+将式\ref{eq:deltaU}, 式\ref{eq:deltainvT}和\ref{eq:deltafracpT}代入式\ref{eq:delta2s}即可得式(3.1.13)即
+\[
+\delta^2 S = -\frac{C_v}{T^2}(\delta T)^2 + \frac{1}{T}\bigg(\frac{\partial p}{\partial V}\bigg)_T(\delta V)^2 < 0
+\]
+\end{solution}

@@ -1,0 +1,33 @@
+\begin{problem}[1.4]
+简单固体和液体的体胀系数$\alpha$和等温压缩系数$\kappa_T$数值都很小,在一定温度范围内可以把$\alpha$和$\kappa_T$看作常量. 试证明简单固体和液体的物态方程可近似为
+\[
+V(T,p) = V_0(T_0,0)[1+\alpha(T-T_0)-\kappa_T p]
+\]
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+以压强$p$和温度$T$为状态参量, 简单固体和液体的物态方程及其全微分为
+\[
+V = V(T,p)
+\quad\Longrightarrow\quad 
+dV = \bigg(\frac{\partial V}{\partial T}\bigg)_p dT + \bigg(\frac{\partial V}{\partial p}\bigg)_T dp
+\]
+因此有
+\[
+\frac{dV}{V} = \frac{1}{V}\bigg(\frac{\partial V}{\partial T}\bigg)_p dT + \frac{1}{V}\bigg(\frac{\partial V}{\partial p}\bigg)_T dp = \alpha dT -\kappa_T dp
+\]
+在一定温度范围内可以把$\alpha$和$\kappa_T$看作常量, 选择适当的积分路径$(p_0,T_0)\rightarrow(p_0,T)\rightarrow(p,T)$对上式两端同时积分得
+\[
+\ln V - \ln V_0 = \alpha(T-T_0) - \kappa(p-P_0)
+\quad\Longrightarrow\quad 
+V = V_0 \exp\Big(\alpha(T-T_0) - \kappa(p-P_0)\Big)
+\]
+对上式中的指数函数作泰勒展开得
+\[
+V = V_0 \bigg[1+\alpha(T-T_0) - \kappa(p-P_0)　+　O\Big(\big(\alpha(T-T_0) - \kappa(p-P_0)\big)^2\Big)\bigg]
+\]
+由于固体和液体的体胀系数$\alpha$和等温压缩系数$\kappa_T$数值都很小, 因此上式中的高阶项可忽略并取$p_0=0$, 则简单固体和液体的物态方程可近似为
+\[
+V(T,p) = V_0(T_0,0)[1+\alpha(T-T_0)-\kappa_T p]
+\]
+\end{solution}

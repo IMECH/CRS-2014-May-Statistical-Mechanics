@@ -1,0 +1,63 @@
+\section{系综理论}
+
+% ---------------------------------------
+\subsection{相空间, 哈密顿量, 能量曲面, 刘维尔定律}
+\begin{itemize}
+\item\textbf{相空间}: 据经典力学, 系统在任一时刻的微观运动状态由$f$个广义坐标$q_1,q_2,\cdots,q_f
+$及与其共轭的$f$个广义动量$p_1, p_2,\cdots, p_f$在该时刻的数值确定, 以$q_1,q_2,\cdots, q_f; p_1, p_2,\cdots, p_f$共$2f$个变量为直角坐标构成一个$2f$维空间, 称为相空间.
+\item\textbf{哈密顿量}: 对于孤立系统, 哈密顿量就是他的能量, 包括例子的动能, 例子相互作用的势能和粒子在保守场中的势能.
+\item\textbf{能量曲面}: 孤立系统的能量$E$不随时间而改变, 故系统的广义坐标, 广义动量必然
+满足条件: $H(q_1\cdots,q_s; p_1\cdots,p_s)$. 上式确定相空间中的一个曲面, 为能量曲面. 孤立系统运
+动状态的代表点一定位于能量曲面之上.
+\item\textbf{刘维尔定律}: 如果随着一个代表点沿正则方程所确定的轨道在相空间中运动, 其邻域的代表点密度是不随时间改变的常数:$\d \rho/\d t = 0$. (可逆)
+\end{itemize}
+
+% ---------------------------------------
+
+\subsection{系综}
+系综：宏观状态, 微观(量子态)结构都相同，但微观状态不同的系统的集合.
+\begin{itemize}
+\item\textbf{微正则系综(孤立系)}: 以$E$, $N$, $V$为宏观参量完备集, 体系与外界无能量交换也没有粒子交换. 其\textbf{热力学公式}:$S(N,E,V) = k\ln\Omega(N,E,V)$
+\item\textbf{正则系综(封闭系)}: 以$N$, $V$, $T$为宏观参量完备集, 每一个体系与外界有能量交换,无粒子交换. 其\textbf{状态分布函数(处于微观态$s$的概率)}:
+\[
+\rho_s=\frac{1}{Z}\mathrm{e}^{-\beta E_s}
+\]
+其中$Z=\sum_S \exp\{-\beta E_s\}$为配分函数. 其内能, 压强和熵分别为
+\[
+U = -\frac{\partial}{\partial\beta}\ln Z,\quad
+p = \frac{1}{\beta}\frac{\partial}{\partial V}\ln Z
+\]
+\[
+S = k\bigg(\ln Z - \beta\frac{\partial}{\partial\beta}\ln Z \bigg)
+\]
+能量涨落的表达式为
+\[
+\frac{\overline{(E-\overline{E})^2}}{\overline{E}^2}=\frac{kT^2C_v}{\overline{E}^2}
+\]
+\item\textbf{巨正则系综(开放系)}: 以$V$, $T$, $\mu$为宏观参量完备集, 每一个体系与外界既有能量交换, 又有粒子交换. 其内能, 压强和熵分别为
+\[
+U = -\frac{\partial}{\partial\beta}\ln \Xi,\quad
+p = \frac{1}{\beta}\frac{\partial}{\partial V}\ln \Xi
+\]
+\[
+S = k\bigg(\ln \Xi - \alpha\frac{\partial}{\partial\alpha}\ln \Xi - \beta\alpha\frac{\partial}{\partial\beta}\ln \Xi \bigg)
+\]
+状态分布函数(概率)
+\[
+\rho_{N_s} = \frac{1}{\Xi} \mathrm{e}^{-\alpha N-\beta E}
+\]
+其中$\Xi$为巨配分函数
+\[
+\Xi = \sum_{N=0}^\infty\sum_s \mathrm{e}^{-\alpha N-\beta E_s}
+\]
+粒子数涨落的表达式
+\[
+\frac{\overline{(N-\overline{N})^2}}{\overline{N}^2} 
+= -\bigg(\frac{\partial \overline{N}}{\partial\alpha}\bigg)_{\beta,y} 
+= kT\bigg(\frac{\partial \overline{N}}{\partial\mu}\bigg)_{T,V} 
+\]
+
+\end{itemize}
+
+
+

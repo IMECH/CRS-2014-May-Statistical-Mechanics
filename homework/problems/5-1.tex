@@ -1,0 +1,38 @@
+\begin{problem}[5.1]
+带有小孔的隔板将容器分为两半. 容器与外界隔绝, 其中盛有理想气体. 两侧气体存在小的温度差$\Delta T$和压强差$\Delta p$, 而各自处在局部平衡. 以
+$J_n = \frac{\mathrm{d}n}{\mathrm{d}t}$ 和 $J_u = \frac{\mathrm{d}U}{\mathrm{d}t}$ 表示单位时间内从左侧转移到右侧的气体的物质的量和内能. 试导出气体的熵产生率公式, 从而确定相应的动力.
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+左右两侧气体的熵变分别为
+\[
+\mathrm{d}S_{1}  =\frac{1}{T_{1}}\mathrm{d}U_{1}-\frac{\mu_{1}}{T_{1}}\mathrm{d}n_{1},\qquad
+\mathrm{d}S_{2}  =\frac{1}{T_{2}}\mathrm{d}U_{2}-\frac{\mu_{2}}{T_{2}}\mathrm{d}n_{2}
+\]
+因此两侧气体的熵变为
+\begin{equation}\label{eq:5-1dS}
+\mathrm{d}S 
+= \mathrm{d}S_1 + \mathrm{d}S_2 
+= \frac{1}{T_{1}}\mathrm{d}U_{1}-\frac{\mu_{1}}{T_{1}}\mathrm{d}n_{1} 
++ \frac{1}{T_{2}}\mathrm{d}U_{2}-\frac{\mu_{2}}{T_{2}}\mathrm{d}n_{2}
+\end{equation}
+容器与外界隔绝且被有小孔的隔板将容器分为两半, 因此可令
+\[
+\mathrm{d}U  = \mathrm{d}U_1 =- \mathrm{d}U_2,
+\qquad 
+\mathrm{d}n  = \mathrm{d}n_1 =- \mathrm{d}n_2,
+\]
+令$T = T_2$, $\mu = \mu_2$, 则有$T_1 = T + \Delta T$, $\mu_1 = \mu + \Delta\mu$. 因此气体的熵变式(\ref{eq:5-1dS})可以表示为
+\begin{align*}
+\mathrm{d}S & =\mathrm{d}S_{1}+\mathrm{d}S_{2}=\bigg(\frac{1}{T_{1}}-\frac{1}{T_{2}}\bigg)\mathrm{d}U-\bigg(\frac{\mu_{1}}{T_{1}}-\frac{\mu_{1}}{T_{2}}\bigg)\mathrm{d}n\\
+ & =\bigg(\frac{1}{T+\Delta T}-\frac{1}{T}\bigg)\mathrm{d}U-\bigg(\frac{\mu+\Delta\mu}{T+\Delta T}-\frac{\mu}{T}\bigg)\mathrm{d}n
+\end{align*}
+熵产生率为
+\begin{align*}
+\frac{\mathrm{d}S}{\mathrm{d}t} 
+ &=\bigg(\frac{1}{T+\Delta T}-\frac{1}{T}\bigg)\frac{\mathrm{d}U}{\mathrm{d}t}-\bigg(\frac{\mu+\Delta\mu}{T+\Delta T}-\frac{\mu}{T}\bigg)\frac{\mathrm{d}n}{\mathrm{d}t}\\
+ &\approx - \frac{\Delta T}{T^2}\frac{\mathrm{d}U}{\mathrm{d}t} + \frac{\mu\Delta T - T\Delta\mu}{T^2}\frac{\mathrm{d}n}{\mathrm{d}t}\\
+ &= J_u\cdot X_u + J_n\cdot X_n
+\end{align*}
+其中 $J_u = \frac{\mathrm{d}U}{\mathrm{d}t}$ 为内能流量, $J_n = \frac{\mathrm{d}n}{\mathrm{d}t}$ 为物质流量,  $X_u = - \frac{\Delta T}{T^2}$ 为内能流动力, $X_n = \frac{\mu\Delta T - T\Delta\mu}{T^2}$ 为物质流动力.
+\end{solution}

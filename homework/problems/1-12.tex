@@ -1,0 +1,29 @@
+\begin{problem}[1.12]
+假设理想气体的$C_p$和$C_V$之比$\gamma$是温度的函数, 试求在准静态绝热过程
+中$T$和$V$的关系, 该关系式中要用到一个函数$F(T)$, 其表达式为
+\[
+\ln F(T) = \int\frac{dT}{(\gamma-1)T}
+\]
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+由热力学第一定律, 理想气体在准静态绝热过程中有
+\[
+dU = \dbar W \quad\Longrightarrow\quad C_vdT =　-　pdV
+\]
+由理想气体状态方程$pV=nRT$与上式两端相乘得
+\[
+\frac{C_v}{nRT}dT = -\frac{dV}{V}
+\]
+将$C_p-C_v=nR$及$C_p/C_V=\gamma$代入上式得
+\[
+\frac{1}{\gamma-1}\frac{dT}{T} = -\frac{dV}{V}
+\]
+对上式两端同时积分
+\[
+\int \frac{1}{\gamma-1}\frac{dT}{T} = - \int \frac{dV}{V}
+\quad\Longrightarrow\quad
+\ln F(T) + \ln V = C
+\]
+其中$C$为常数.
+\end{solution}

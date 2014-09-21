@@ -1,0 +1,179 @@
+\documentclass[12pt,a4paper,boxed,titlepage]{caspset}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm]
+% set 1-inch margins in the document
+\usepackage[left=1in,right=1in,top=1.2in,bottom=1in]{geometry}
+%\usepackage[left=0.1in,right=0.1in,top=0.1in,bottom=0.45in]{geometry}
+%\usepackage[frame,center,noinfo]{crop}
+\usepackage{lastpage}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage[unicode]{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage}
+\usepackage{soul}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xeCJK}
+%\usepackage{fontspec}
+\setCJKmainfont[BoldFont=simhei.ttf]{simsun.ttf}
+\setCJKsansfont{simhei.ttf}
+\setCJKmonofont{simfang.ttf}
+
+%\setCJKmainfont{Adobe Song Std}
+%\setCJKmainfont[BoldFont=Adobe Heiti Std]{Adobe Song Std}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\dbar{{\mathchar'26\mkern-10mu d}}
+\def\hbar{{\mathchar'26\mkern-10mu h}}
+\def\d{\mathrm{d}}
+\graphicspath{{figures/}}
+
+\setulcolor{red}
+
+
+\renewcommand\refname{\bf\large 参考文献}
+\renewcommand\contentsname{\bf 目 \ \ \ 录}
+\renewcommand\figurename{\bf 图}
+\renewcommand\tablename{\bf 表}
+\renewcommand\listfigurename{图目录}
+
+\newcommand{\hmwkTitle}{热力学 统计物理}
+\newcommand{\hmwkSubTitle}{abc} % No subtitle, so this will be excluded
+\newcommand{\hmwkDueDate}{\today}
+\newcommand{\hmwkClass}{中科院力学所}
+\newcommand{\hmwkClassTime}{Thu.{~}14:00}
+\newcommand{\hmwkClassInstructor}{魏小林}
+\newcommand{\hmwkAuthorName}{周吕文}
+
+
+\hypersetup{pdfauthor={\hmwkAuthorName}, 
+            pdftitle={热力学统计物理(2014年春)作业整理}, 
+            pdfsubject={\hmwkTitle, \hmwkClassInstructor},
+            pdfkeywords={热力学统计物理},
+            pdfproducer={XeLateX with hyperref},
+            pdfcreator={Xelatex}}
+
+
+\newcommand\invisiblesection[1]{%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \sectionmark{#1}}
+
+\newcommand\invisiblesubsection[1]{%
+  \refstepcounter{subsection}%
+  \addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection}#1}%
+  \subsectionmark{#1}}
+
+\renewcommand\refname{\bf 参考文献}
+\renewcommand\contentsname{\bf 目 \ \ \ 录}
+\renewcommand\figurename{\bf 图}
+\renewcommand\tablename{\bf 表}
+\def\dbar{{\mathchar'26\mkern-10mu \mathrm{d}}}
+\def\hbar{{\mathchar'26\mkern-10mu h}}
+\def\d{\mathrm{d}}
+
+
+\pagestyle{fancy}
+\fancyhead{} % clear all fields 
+\lhead{周吕文}
+\chead{力学所(魏小林): 热力学统计物理} 
+\rhead{第\ \thepage\ 页, ~共\ \protect\pageref{LastPage}\ 页} 
+\begin{document}
+\title{热力学统计物理(2014年春)\\作业整理
+ \vspace{-20pt}}
+\author{{\Large 授课老师: 魏小林}\\ \vspace{50pt}\\ 周吕文\\ \href{mailto:zhou.lv.wen@gmail.com}{zhou.lv.wen@gmail.com}\\ \vspace{50pt}}
+\date{中国科学院力学研究所\\2014年05月01日}
+\maketitle
+%%%%%%%%%%%%%%%%
+\noindent{\textbf{说明}: 本文档是由本人的热力学统计物理作业, 参考相关答案整理而成. 时间有限, 难免有误, 发现问题, 请电邮我. 祝各位考试顺利.}
+
+
+\tableofcontents
+\newpage
+%%%%%%%%%%%%%%%%%%%
+\invisiblesection{第一章{~}热力学的基本规律}
+\problemlist{\bf 第一章{~}热力学的基本规律}
+\invisiblesubsection{习题1.2}
+\input{./problems/1-2.tex}
+\invisiblesubsection{习题1.4}
+\input{./problems/1-4.tex}
+\invisiblesubsection{习题1.9}
+\input{./problems/1-9.tex}
+\invisiblesubsection{习题1.12}
+\input{./problems/1-12.tex}
+\invisiblesubsection{习题1.16}
+\input{./problems/1-16.tex}
+\invisiblesubsection{习题1.17}
+\input{./problems/1-17.tex}
+
+\newpage
+\invisiblesection{第二章{~}均匀物质的热力学性质}
+\problemlist{\bf 第二章{~}均匀物质的热力学性质}
+\invisiblesubsection{习题2.6}
+\input{./problems/2-6.tex}
+\invisiblesubsection{习题2.15}
+\input{./problems/2-15.tex}
+
+\newpage
+\invisiblesection{第三章{~}单元系的相变}
+\problemlist{\bf 第三章{~}单元系的相变}
+\invisiblesubsection{习题3.2}
+\input{./problems/3-2.tex}
+\invisiblesubsection{习题3.8}
+\input{./problems/3-8.tex}
+\invisiblesubsection{习题3.11}
+\input{./problems/3-11.tex}
+\invisiblesubsection{习题3.14}
+\input{./problems/3-14.tex}
+
+\newpage
+\invisiblesection{第四章{~}多元系的复相平衡和化学平衡 热力学第三定律}
+\problemlist{\bf 第四章{~}多元系的复相平衡和化学平衡 热力学第三定律}
+\invisiblesubsection{习题4.3}
+\input{./problems/4-3.tex}
+\invisiblesubsection{习题4.6}
+\input{./problems/4-6.tex}
+
+\newpage
+\invisiblesection{第五章{~}不可逆过程热力学简介}
+\problemlist{\bf 第五章{~}不可逆过程热力学简介}
+\invisiblesubsection{习题5.1}
+\input{./problems/5-1.tex}
+
+\newpage
+\invisiblesection{第六章{~}近独立粒子的最概然分布}
+\problemlist{\bf 第六章{~}近独立粒子的最概然分布}
+\invisiblesubsection{习题6.1}
+\input{./problems/6-1.tex}
+\invisiblesubsection{习题6.2}
+\input{./problems/6-4.tex}
+\invisiblesubsection{习题6.3}
+\input{./problems/6-5.tex}
+
+\newpage
+\invisiblesection{第七章{~}玻耳兹曼统计}
+\problemlist{\bf 第七章{~}玻耳兹曼统计}
+\invisiblesubsection{习题7.18}
+\input{./problems/7-18.tex}
+\invisiblesubsection{习题7.20}
+\input{./problems/7-20.tex}
+
+
+%%\input{./problems/1-8.tex}
+%%\input{./problems/1-21.tex}
+%%\input{./problems/4-9.tex}
+
+
+
+
+%\input{./problems/9-3.tex}
+%\input{./problems/9-9.tex}
+
+
+
+\end{document} 

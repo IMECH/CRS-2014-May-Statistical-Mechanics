@@ -1,0 +1,68 @@
+\begin{problem}[6.5]
+设系统含有两种粒子,其粒子数分别为$N$和$N'$. 粒子间的相互作用很弱, 可以看作是近独立的. 假设粒子可以分辨, 处在一个个体量子态的粒子数不受限制. 试证明, 在平衡状态下两种粒子的最概然分布分别为
+\[
+a_l = \omega_l \mathrm{e}^{-\alpha - \beta \varepsilon_l},\qquad
+a_l' = \omega_l' \mathrm{e}^{-\alpha' - \beta \varepsilon_l'}
+\]
+其中$\varepsilon_l$和$\varepsilon_l'$是两种粒子的能级, $\omega_l$和$\omega_l'$是能级的简并度.
+\end{problem}
+% --------------------------------------------------------------------
+\begin{solution}
+系统含有两种粒子,其粒子数分别为$N$和$N'$, 设总能量和体积分别为$E$和$V$, 则两种粒子的分布$\{a_l\}$和$\{a_l'\}$必需满足
+\begin{equation}\label{eq:6_5suma}
+\sum_l a_l  = N , \qquad
+\sum_l a_l' = N', \qquad
+\sum_l \varepsilon_l a_l + \sum_l \varepsilon_l' a_l' = E 
+\end{equation}
+在粒子可以分辨,且处在一个个体量子态的粒子数不受限制的情形下,两种粒子分别处于分布$\{a_l\}$和$\{a_l'\}$时各自的微观状态数为
+\[
+\Omega  = \frac{N!}{\prod\limits_l a_l !} \prod\limits_l \omega_l^{a_l},\qquad
+\Omega' = \frac{N'!}{\prod\limits_l a_l' !} \prod\limits_l \omega_l'^{a_l'}
+\]
+系统的微观状态数为
+\[
+\Omega^{(0)} = \Omega\cdot\Omega'
+\]
+平衡状态下系统的最概然分布是在满足式(\ref{eq:6_5suma})的条件下使$\Omega^{(0)}$或$\ln\Omega^{(0)}$为极大的分布. 利用斯特令公式, 由上式可得
+\begin{align*}
+\ln\Omega^{(0)} & =\ln\big(\Omega\cdot\Omega'\big)\\
+ & =N\ln N-\sum_{l}a_{l}\ln a_{l}+\sum_{l}a_{l}\ln\omega_{l}+N'\ln N'-\sum_{l}a_{l}'\ln a_{l}'+\sum_{l}a_{l}'\ln\omega_{l}'
+\end{align*}
+为求使$\ln\Omega^{(0)}$为极大的分布, 令$a_l$和$a_l'$各有$\delta a_l$和$\delta a_l'$的变化, $\ln\Omega^{(0)}$将因而有$\delta \ln\Omega^{(0)}$的变化. 使$\ln\Omega^{(0)}$为极大的分布$\{a_l\}$和$\{a_l'\}$必使
+\[
+\delta \ln \Omega^{(0)} = -\sum_l \ln\bigg(\frac{a_l}{\omega_l}\bigg)\delta a_l - \sum_l \ln\bigg(\frac{a_l'}{\omega_l'}\bigg)\delta a_l'
+= 0
+\]
+这些$\delta a_l$和$\delta a_l'$不完全是独立的, 它们必须满足条件
+\[
+\delta N = \sum_l\delta a_l = 0,\quad
+\delta N = \sum_l\delta a_l = 0,\quad
+\delta E = \sum_l\varepsilon_l \delta a_l + \sum_l \varepsilon_l' \delta a_l' = 0
+\]
+用拉氏乘子$\alpha$, $\alpha'$和$\beta$分别乘这三个式子并从$\delta\ln\Omega^{(0)}$中减去, 得
+\begin{align*}
+  & ~\delta\ln\Omega^{(0)}-\alpha\delta N-\alpha'\delta N'-\beta\delta E\\
+= & ~\sum_{l}\bigg(\ln\frac{a_{l}}{\omega_{l}}+\alpha+\beta\varepsilon_{l}\bigg)-\sum_{l}\bigg(\ln\frac{a_{l}'}{\omega_{l}'}+\alpha'+\beta\varepsilon_{l}'\bigg)\delta a_{l}'\\
+= & ~0
+\end{align*}
+根据拉氏乘子法原理, 每个$\delta a_{l}$和$\delta a_{l}'$的系数都等于零, 所以得
+\[
+\ln \frac{a_l}{\omega_l} + \alpha + \beta \varepsilon_l = 0,\quad
+\ln \frac{a_l'}{\omega_l'} + \alpha' + \beta' \varepsilon_l' = 0
+\]
+即
+\[
+a_l = \omega_l \mathrm{e}^{-\alpha - \beta \varepsilon_l},\quad
+a_l' = \omega_l' \mathrm{e}^{-\alpha' - \beta \varepsilon_l'}
+\]
+
+
+
+
+
+
+
+
+
+
+\end{solution}
